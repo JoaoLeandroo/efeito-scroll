@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color-scheme: dark;
 }
 
 body {
@@ -11,6 +12,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.infos {
+    display: flex;
+    gap: 20px;
+}
+
+.infos h1 {
+    font-size: 45px;
 }
 
 .container {
@@ -22,6 +33,10 @@ body {
     display: flex;
     gap: 0 12px;
     padding: 10px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
 }
 
 img {
